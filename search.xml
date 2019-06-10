@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[anaconda安装tensorflow GPU版]]></title>
+    <url>%2F2019%2F06%2F10%2FGPU%E7%89%88%2F</url>
+    <content type="text"><![CDATA[win10 + anaconda + GPU安装tensorflowtensorflow是入门cv必备利器之一，但在GPU上的安装过程十分令人头疼，极容易踩坑。现在来分享一下自己的安装过程（踩坑经历）。 STEP 1:安装anaconda选择64位图形安装程序安装时注意选择是否将anaconda添加到path环境变量中（据说不加更好）。安装完毕，打开anaconda prompt，添加清华镜像：123conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/conda config --set show_channel_urls yes 安装成功可用conda (-V)--version检查版本。 创建tensorflow-GPU环境为了营造一个独立的tensorflow GPU版的环境，环境名自拟，用以下命令：1conda create -n tensorflow-gpu（环境名） pip python = 3.6 激活与去激活环境主要用以下命令实现：1234#激活命令,base变成tensorflow-gpuactivate tensorflow-gpu#去激活命令deactivate tensorflow-gpu STEP 2:安装tensorflow选择适合本机的CUDA和CuDNN版本注意版本一定要对应，否则不能用。我选用的是CUDA9.0和CuDNN7.0 安装CUDA安装CuDNN安装过程便不赘述，网上教程很多。分享一个踩过的坑，安装路径和最终路径不一样，cudnn安装过后会自动销毁安装路径，所以如果将安装路径和最终路径设置成一样，相当于没安装。将cudnn的文件拷到cuda的安装路径下。 安装tensorflow接下来主角就要登场了，在激活的tensorflow-GPU环境中，安装tensorflow1conda install tensorflow-gpu 等待安装完成即可。 STEP 3:测试安装进入python，随意输入代码运行tensorflow，来个hello world吧：1234import tensorflow as tfhello = tf.constant(&apos;hello world!&apos;)sess = tf.Session()print(sess.run(hello)) 输出为：1b&apos; hello world! 至此大功告成啦！可以愉快开始学习之旅了~]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[github+hexo搭建博客]]></title>
+    <url>%2F2019%2F06%2F10%2F1%2F</url>
+    <content type="text"><![CDATA[开始搭建自己的博客啦，在朋友的推荐下采用简洁高效的hexo作为博客框架，小白（我）上手竟然遇到的问题都不多,强推！ubuntu版本为：18.04 安装nodejs并更新安装nodejs和npm，并更换为淘宝镜像。1sudo npm config set registry https://registry.npm.taobao.org 通过 sudo npm config list 查看是否安装成功 安装hexo选择一个空目录创建hexo目录模板,下载next主题。12sudo hexo initsudo git clone https://github.com/iissnan/hexo-theme-next.git themes/next 更换主题定义：博客根目录的_config.yml称为站点配置文件，next主题下的_config.yml称为主题配置文件。在根目录_config.yml文件中启用next主题。1theme: next 在主题配置文件中，查找scheme，选择自己喜欢的主题，取消注释。12345#主题选择#scheme: Muse#scheme: Mist#scheme: Pisces#scheme: Gemini 其余页面优化请参考博客1,博客2等都有详细介绍。 本菜就此起飞了~~]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F04%2F14%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
