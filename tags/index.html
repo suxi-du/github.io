@@ -26,7 +26,6 @@
 
 
 
-
 <meta http-equiv="Cache-Control" content="no-transform">
 <meta http-equiv="Cache-Control" content="no-siteapp">
 
@@ -85,6 +84,16 @@
 
 
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 <meta name="description" content="Stay Hungry, Stay Foolish">
 <meta property="og:type" content="website">
@@ -311,10 +320,10 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                暂无标签
+                目前共计 1 个标签
             </div>
             <div class="tag-cloud-tags">
-              
+              <a href="/tags/个人感悟/" style="font-size: 12px; color: #ccc">个人感悟</a>
             </div>
           </div>
         
@@ -376,7 +385,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -387,12 +396,21 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
         <br>
@@ -406,7 +424,7 @@
              <span class="site-state-item-name">访客量</span>
         </div>
         <div class="site-state-item site-state-posts">
-              <span class="site-state-item-count">704</span>
+              <span class="site-state-item-count">4.3k</span>
               <span class="site-state-item-name">总字数</span>
         </div>
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-11T06:02:46.062Z</updated>
+  <updated>2019-06-30T09:18:45.150Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>提笔忘字系列之毕业感触</title>
+    <link href="http://yoursite.com/2019/06/30/1/"/>
+    <id>http://yoursite.com/2019/06/30/1/</id>
+    <published>2019-06-30T08:13:06.000Z</published>
+    <updated>2019-06-30T09:18:45.150Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近发生事情较多，开始思考一些问题，记录如下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="个人感悟" scheme="http://yoursite.com/categories/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="个人感悟" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>anaconda安装tensorflow GPU版</title>
     <link href="http://yoursite.com/2019/06/10/GPU%E7%89%88/"/>
     <id>http://yoursite.com/2019/06/10/GPU版/</id>
     <published>2019-06-10T15:53:41.000Z</published>
-    <updated>2019-06-11T06:02:46.062Z</updated>
+    <updated>2019-06-30T08:54:55.414Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;win10-anaconda-GPU安装tensorflow&quot;&gt;&lt;a href=&quot;#win10-anaconda-GPU安装tensorflow&quot; class=&quot;headerlink&quot; title=&quot;win10 + anaconda +
-        
-      
+      &lt;h1 id=&quot;win10-anaconda-GPU安装tensorflow&quot;&gt;&lt;a href=&quot;#win10-anaconda-GPU安装tensorflow&quot; class=&quot;headerlink&quot; title=&quot;win10 + anaconda + GPU安装tensorflow&quot;&gt;&lt;/a&gt;win10 + anaconda + GPU安装tensorflow&lt;/h1&gt;&lt;p&gt;tensorflow是入门cv必备利器之一，但在GPU上的安装过程十分令人头疼，极容易踩坑。现在来分享一下自己的安装过程（踩坑经历）。&lt;br&gt;
     
     </summary>
     
@@ -45,17 +59,11 @@
     <link href="http://yoursite.com/2019/06/10/1/"/>
     <id>http://yoursite.com/2019/06/10/1/</id>
     <published>2019-06-10T08:23:07.000Z</published>
-    <updated>2019-06-11T06:02:40.509Z</updated>
+    <updated>2019-06-30T08:54:47.986Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;开始搭建自己的&lt;a href=&quot;https://github.io/suxi-du&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;开始搭建自己的&lt;a href=&quot;https://github.io/suxi-du&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;博客&lt;/a&gt;啦，在朋友的推荐下采用简洁高效的hexo作为博客框架，小白（我）上手竟然遇到的问题都不多,强推！&lt;br&gt;ubuntu版本为：18.04&lt;br&gt;
     
     </summary>
     
